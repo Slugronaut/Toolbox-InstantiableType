@@ -1,0 +1,21 @@
+{
+  "name": "com.postegames.instantiabletype",
+  "version": "1.0.0",
+  "displayName": "PEGLIB - Instantiable Type",
+  "description": "A datatype that stores a datatype name and all of the parameters to pass to it so as to instantiate an instance at runtime.",
+  "unity": "2022.2",
+  "dependencies": {
+    "com.postegames.typehelper": "",
+    "com.postegames.editorguiextensions": ""
+  },
+  "keywords": [
+    "library",
+    "toolbox",
+    "utility"
+  ],
+  "author": {
+    "name": "Sluggy",
+    "email": "jcsluggy@gmail.com",
+    "url": "http:/postegames.com"
+  }
+}
