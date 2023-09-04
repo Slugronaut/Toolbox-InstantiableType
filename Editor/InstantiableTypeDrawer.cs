@@ -6,9 +6,9 @@ using Sirenix.OdinInspector.Editor;
 using UnityEngine;
 using UnityEditor;
 using Sirenix.Utilities.Editor;
-using Toolbox.Attributes;
+using Peg.Attributes;
 
-namespace Toolbox.Editor
+namespace Peg.Editor
 {
     /// <summary>
     /// 

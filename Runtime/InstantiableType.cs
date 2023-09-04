@@ -3,7 +3,7 @@ using System.Reflection;
 using System;
 using UnityEngine;
 
-namespace Toolbox
+namespace Peg
 {
     /// <summary>
     /// A datatype that can be instantiated upon creation of it's container behaviour. All parameter

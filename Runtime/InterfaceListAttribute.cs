@@ -1,6 +1,6 @@
 using System;
 
-namespace Toolbox.Attributes
+namespace Peg.Attributes
 {
     /// <summary>
     /// Place this above a string in a MonoBehaviour to instruct the inspector
