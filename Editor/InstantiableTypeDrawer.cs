@@ -59,6 +59,7 @@ namespace Peg.Editor
                 i++;
             }
             if (string.IsNullOrEmpty(selected)) selected = Attribute.DefaultChoice;
+            if (!Indexer.ContainsKey(selected)) selected = Attribute.DefaultChoice;
             
             //TODO: We need a guard against removed types here!!
 
