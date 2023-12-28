@@ -38,7 +38,7 @@ namespace Peg.Editor
             Names.Add(Attribute.DefaultChoice);
             Indexer.Add(Attribute.DefaultChoice, 0);
 
-            //we use a static cached lookup here to *significantly* speed up the process and imporve editor response
+            //we use a static cached lookup here to *significantly* speed up the process and improve editor response
             if (!Lookup.TryGetValue(Attribute.InheritsFrom, out Type[] types))
             {
                 if (Attribute.DefaultConstructorOnly)
@@ -59,7 +59,10 @@ namespace Peg.Editor
                 i++;
             }
             if (string.IsNullOrEmpty(selected)) selected = Attribute.DefaultChoice;
-            if (!Indexer.ContainsKey(selected)) selected = Attribute.DefaultChoice;
+
+            //BUG: commenting this out for now since it's causing issues on project reload...
+            //      it's apparently losing track of the information
+            if(!Indexer.ContainsKey(selected)) selected = Attribute.DefaultChoice;
             
             //TODO: We need a guard against removed types here!!
 
